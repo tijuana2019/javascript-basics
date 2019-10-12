@@ -91,22 +91,50 @@ const isOdd = a => {
 
 const isEven = a => {
   // your code here
+  if (a % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const isSquare = a => {
   // your code here
+  a = Math.sqrt(a);
+  if (Number.isInteger(a)) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const startsWith = (char, string) => {
   // your code here
+  if (string.startsWith(char)) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const containsVowels = string => {
   // your code here
+  if (string.includes("a") || string.includes("A") || string.includes("e") || string.includes("E") 
+  || string.includes("i") || string.includes("I") || string.includes("o") || string.includes("O") || string.includes("u") 
+  || string.includes("U")) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const isLowerCase = string => {
   // your code here
+  if (string == string.toLowerCase()) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 module.exports = {
